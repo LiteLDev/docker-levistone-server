@@ -29,9 +29,8 @@ fi
 
 if [ ! -d "/data/.wine/drive_c/Program Files/Python313" ]
 then
-    wget -q https://www.python.org/ftp/python/3.13.12/python-3.13.12-amd64.exe -O /data/.tmp/python-installer.exe
-    xvfb-run -a wine /data/.tmp/python-installer.exe /quiet InstallAllUsers=1 PrependPath=1
-    rm -f /data/.tmp/python-installer.exe
+    xvfb-run -a wine /opt/python-installer.exe /quiet InstallAllUsers=1 PrependPath=1
+    rm -f /opt/python-installer.exe
 fi
 
 export WINEDEBUG="${WINEDEBUG:--all}"

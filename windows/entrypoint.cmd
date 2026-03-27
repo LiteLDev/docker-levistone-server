@@ -21,12 +21,6 @@ if not exist "C:\Program Files\dotnet\" (
     del dotnet-runtime.exe
 )
 
-if not exist "C:\Program Files\Python313\" (
-    powershell -Command "Invoke-WebRequest -Uri https://www.python.org/ftp/python/3.13.12/python-3.13.12-amd64.exe -OutFile python-installer.exe
-    python-installer.exe /quiet InstallAllUsers=1 PrependPath=1
-    del python-installer.exe
-)
-
 if not exist "bedrock_server_mod.exe" (
     if not "%GITHUB_MIRROR_URL%"=="" (
         lip.exe config set github_proxy %GITHUB_MIRROR_URL%
