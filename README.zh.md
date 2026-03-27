@@ -30,4 +30,4 @@ docker run -d -it -e EULA=TRUE -e GITHUB_MIRROR_URL=https://github.bibk.top -e P
 
 - `LEVISTONE_VERSION`: 要安装的LeviStone版本
 
-更多环境变量请参考: https://lamina.levimc.org/zh/user_guides/install_on_docker/#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F
+更多环境变量请参考: https://lamina.levimc.org/zh/user_guides/install_on_docker/#环境变量
