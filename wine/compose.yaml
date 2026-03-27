@@ -1,0 +1,14 @@
+services:
+  levistone-server:
+    image: ghcr.io/liteldev/levistone-server:latest-wine
+    environment:
+      EULA: TRUE
+    ports:
+      - 19132:19132/udp
+    volumes:
+      - levistone-server-data:/data
+    stdin_open: true
+    tty: true
+
+volumes:
+  levistone-server-data:
