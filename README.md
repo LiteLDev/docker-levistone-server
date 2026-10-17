@@ -22,4 +22,4 @@ docker run -d -it -e EULA=TRUE -p 19132:19132/udp -v levistone-server-data:C:\da
 
 - `LEVISTONE_VERSION`: Version of LeviStone which will be installed
 
-For more environment variables, please refer to: https://lamina.levimc.org/user_guides/install_on_docker/#environment-variables
+For more environment variables, please refer to: https://docs.levimc.org/LeviLamina/user_guides/install_on_docker/#environment-variables

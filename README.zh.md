@@ -30,4 +30,4 @@ docker run -d -it -e EULA=TRUE -e GO_MODULE_PROXY_URL=https://goproxy.cn -e GITH
 
 - `LEVISTONE_VERSION`: 要安装的LeviStone版本
 
-更多环境变量请参考: https://lamina.levimc.org/zh/user_guides/install_on_docker/#环境变量
+更多环境变量请参考: https://docs.levimc.org/LeviLamina/zh/user_guides/install_on_docker/#环境变量
