@@ -26,10 +26,6 @@ if not exist "bedrock_server_mod.exe" (
         lip.exe config set github_proxy %GITHUB_MIRROR_URL%
     )
 
-    if not "%GO_MODULE_PROXY_URL%"=="" (
-        lip.exe config set go_module_proxy %GO_MODULE_PROXY_URL%
-    )
-
     if "%VERSION%"=="LATEST" (
         lip.exe install github.com/LiteLDev/LeviLamina
     ) else (
@@ -41,14 +37,14 @@ if not exist "bedrock_server_mod.exe" (
     )
 )
 
-if not exist "plugins\EndstoneRuntime\" (
+if not exist "mods\EndstoneRuntime\" (
     if not "%PYPI_MIRROR_URL%"=="" (
         pip config set global.index-url %PYPI_MIRROR_URL%
     )
     if not "%LEVISTONE_VERSION%"=="" (
-        pip install levistone==%LEVISTONE_VERSION% --target plugins/EndstoneRuntime
+        pip install levistone==%LEVISTONE_VERSION% --target mods/EndstoneRuntime
     ) else (
-        pip install levistone --target plugins/EndstoneRuntime
+        pip install levistone --target mods/EndstoneRuntime
     )
 )
 

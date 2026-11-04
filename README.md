@@ -7,13 +7,13 @@ English | [简体中文](README.zh.md)
 To start the server in a Linux container, run the following command:
 
 ```sh
-docker run -d -it -e EULA=TRUE -p 19132:19132/udp -v levistone-server-data:/data ghcr.io/liteldev/levistone-server:latest-wine
+docker run -d -it -e EULA=TRUE -p 19132:19132/udp -p 19132:19132/tcp -v levistone-server-data:/data ghcr.io/liteldev/levistone-server:latest-wine
 ```
 
 Or, if you want to use a Windows container, run the following command:
 
-```sh
-docker run -d -it -e EULA=TRUE -p 19132:19132/udp -v levistone-server-data:C:\data ghcr.io/liteldev/levistone-server:latest-windows
+```pwsh
+docker run -d -it -e EULA=TRUE -p 19132:19132/udp -p 19132:19132/tcp -v levistone-server-data:C:\data ghcr.io/liteldev/levistone-server:latest-windows
 ```
 
 ### Environment variables
